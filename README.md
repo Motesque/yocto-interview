@@ -15,8 +15,9 @@ We will provide you with SSH access to a suitable build-host.
 ## Acceptance criteria
 A tarball file containing the following:
 * A new yocto layer "meta-motesque-interview" which contains all necessary files
-* The modified local.conf and layers.bb file
-* The generated quemu image for the "qemux86-64" machine type
+* The modified local.conf and bblayers.conf file
+
+The image can be run at ~/yocto-interview/poky/build$ runqemu qemux86-64 nographic
 
 The `motesque-eigen` program should be installed in `/usr/local/bin` and produce the following output:
 ```
