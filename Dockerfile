@@ -18,9 +18,9 @@ RUN cd /tmp \
 
 # eigen
 RUN mkdir -p /tmp && cd /tmp \
-    && wget -nv http://bitbucket.org/eigen/eigen/get/3.3.7.tar.gz \
-    && tar -xvf 3.3.7.tar.gz \
-    && cd eigen-eigen-323c052e1731 && cmake -S . -B ./build \
+    && wget -nv http://bitbucket.org/eigen/eigen/get/3.3.5.tar.gz \
+    && tar -xvf 3.3.5.tar.gz \
+    && cd eigen-eigen-b3f3d4950030 && cmake -S . -B ./build \
     && cd build && make install
 
 #RUN
@@ -30,5 +30,3 @@ COPY main.cpp CMakeLists.txt FindEIGEN.cmake /tmp/motesque-build/
 RUN cd /tmp/motesque-build/ \
     && cmake -S . -B ./build  \
     && cd ./build && make && make install
-
-# 

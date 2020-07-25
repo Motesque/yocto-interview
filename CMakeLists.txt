@@ -7,6 +7,9 @@ if(UNIX)
 endif()
 
 find_package(EIGEN REQUIRED)
+if(NOT ${EIGEN_VERSION} STREQUAL "3.3.5")
+    message(SEND_ERROR "Eigen Library ${EIGEN_VERSION} is not supported")
+endif()
 
 include_directories(${CMAKE_SOURCE_DIR} ${EIGEN_INCLUDE_DIRS})
 
