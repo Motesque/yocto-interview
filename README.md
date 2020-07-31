@@ -12,6 +12,7 @@ Your task is to deploy this program on an embedded Linux Distribution based on t
 Since you do not have the actual hardware, we will use the **qemu** machine target. Please use the **dunfell** branch. 
 We will provide you with SSH access to a suitable build-host.
 
+
 ## Acceptance criteria
 A tarball file containing the following:
 * A new yocto layer "meta-motesque-interview" which contains all necessary files
@@ -31,4 +32,7 @@ You can  familiarize yourself with the C++ program by using Docker on your local
 ```
 ~% docker build -t yocto-interview .
 ~% docker run --rm yocto-interview motesque-eigen
+
+You might need to make changes to the source to get it working in the Yocto image. 
+https://wiki.yoctoproject.org/wiki/TipsAndTricks/Patching_the_source_for_a_recipe
 ```
