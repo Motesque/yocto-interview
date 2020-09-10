@@ -5,7 +5,7 @@
 * Yocto Build Host (https://www.yoctoproject.org/docs/2.5.1/brief-yoctoprojectqs/brief-yoctoprojectqs.html)
 
 ## Assignment
-A colleque of yours implementd a small C++ program using the Eigen Library (http://eigen.tuxfamily.org/index.php?title=Main_Page)
+A colleague of yours implementd a small C++ program using the Eigen Library (http://eigen.tuxfamily.org/index.php?title=Main_Page)
 For your convenience, she created a Dockerfile which compiles the program "motesque-eigen" using CMake (https://cmake.org/) 
 
 Your task is to deploy this program on an embedded Linux Distribution based on the Yocto Project. 
@@ -32,7 +32,9 @@ You can  familiarize yourself with the C++ program by using Docker on your local
 ```
 ~% docker build -t yocto-interview .
 ~% docker run --rm yocto-interview motesque-eigen
-
-You might need to make changes to the source to get it working in the Yocto image. 
-https://wiki.yoctoproject.org/wiki/TipsAndTricks/Patching_the_source_for_a_recipe
 ```
+
+You will need to make changes to the source to get it working in the Yocto image. 
+This is common procedure in Yocto and well documented here:
+https://wiki.yoctoproject.org/wiki/TipsAndTricks/Patching_the_source_for_a_recipe
+
